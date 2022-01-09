@@ -1,0 +1,11 @@
+<%= render 'users/list', user: @user %>
+<%= render 'books/form', book: @new_book %>
+<% @users.each do |user| %>
+<div>
+  <%= link_to user_path(user.id) do %>
+    <p>本名：<%= user.name %></p>
+  <% end %>
+  <%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %>
+  <p>説明：<%= user.introduction %></p>
+</div>
+<% end %>
