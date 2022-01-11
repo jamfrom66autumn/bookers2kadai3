@@ -1,12 +1,29 @@
-<h2>プロフィール編集</h2>
-<%= form_with model:@user, local:true do |f| %>
-  <label for="inputName">Name</label>
-  <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
-  <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"%>
-  <label for="inputImage">ProfileImage</label>
-  <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
-  <%= f.text_area :introduction %>
-  <button class ="btn btn-primary" type = "button" >
-    <%= f.submit "Update User", class:"link" %>
-  </button>
-<% end %>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-5 px--sm-0 mx-auto">
+        <h2>User info</h2>
+        <%= form_with model:@user, local:true do |f| %>
+        <%= render 'layouts/error_messages', model: f.object %>
+          <div class="form-group">
+            <label for="user_name">Name</label>
+            <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
+          </div>
+          <div class="form-group">
+            <label for="user_image">Image</label>
+            <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+          </div>
+          <div class="form-group">
+            <label for="user_introduction">Introduction</label>
+            <%= f.text_area :introduction %>
+          </div>
+          <div class="form-group">
+            <%= f.submit "Update User", class:"btn btn-primary link" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>
+
+

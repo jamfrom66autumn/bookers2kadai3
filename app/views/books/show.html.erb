@@ -1,12 +1,49 @@
-<%= render 'users/list', user: @user %>
-<%= render 'books/form', book: @new_book %>
-<div>
-  <p>本名：<%= @book.title %></p>
-  <p>説明：<%= @book.body %></p>
-  <p>ユーザーネーム：<%= @book.user.name %></p>
-  <p>投稿日時：<%= @book.created_at.strftime('%Y/%m/%d') %></p>
-  <% if @book.user == current_user %>
-    <%= link_to "削除", book_path(@book), method: :delete %>
-  <% end %>
+<main>
+  <div class="container px-5 px-sm-0">
+    <div class="row">
+      <div class="col-md-3">
+        <%= render 'users/list', user: @book.user %>
+        <%= render 'books/form', book: @new_book %>
+      </div>
+      <div class="col-md-8 offset-md-1">
+        <h2>Book detail</h2>
+        <table class="table table-hover table-inverse">
+          <tbody>
+            <tr>
+              <td>
+                <%= link_to user_path(@book.user.id) do %>
+                  <%= attachment_image_tag @book.user, :profile_image , :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
+                <% end %>
+                <%= link_to user_path(@book.user.id) do %>
+                  <%= @book.user.name %>
+                <% end %>
+              </td>
+              <td>
+                <%= link_to book_path(@book.id) do %>
+                  <%= @book.title %>
+                <% end %>
+              </td>
+              <td>
+                <%= @book.body %>
+              </td>
+              <td>
+                <% if @book.user.id == current_user.id %>
+                  <%= link_to "Edit", edit_book_path(@book), class:"link btn btn-success " %>
+                <% end %>
+              </td>
+              <td>
+                <% if @book.user.id == current_user.id %>
+                  <%= link_to "Destroy", book_path(@book), method: :delete, class:"link btn btn-success " %>
+                <% end %>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
 
-</div>
+
+
+
