@@ -11,3 +11,4 @@ fontawesome の導入　rails6 ２４章に記載（開発２の)
 新規投稿のパスで通らないとき変数名のチェック
 usercontrollerのcorrectuser不要
 form の縦並びはform-controllとかをclass:""で加えるだけ
+レイアウトの崩れはdivタグとかに原因があるケースあり。
