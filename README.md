@@ -12,3 +12,6 @@ fontawesome の導入　rails6 ２４章に記載（開発２の)
 usercontrollerのcorrectuser不要
 form の縦並びはform-controllとかをclass:""で加えるだけ
 レイアウトの崩れはdivタグとかに原因があるケースあり。
+    
+    
+ アクセス制限が余分にかかっていると変なページに遷移してしまう可能性あり。
