@@ -22,3 +22,5 @@ form の縦並びはform-controllとかをclass:""で加えるだけ
     その時はapplicationcontrollerのリダイレクト先を指定しているところを確認。resource
    resouces?
     
+https://niwaka-web.com/fontawsome5_css/
+    fontawesomeのfasなどの話
