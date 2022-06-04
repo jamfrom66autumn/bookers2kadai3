@@ -24,3 +24,9 @@ form の縦並びはform-controllとかをclass:""で加えるだけ
     
 https://niwaka-web.com/fontawsome5_css/
     fontawesomeのfasなどの話
+    
+    
+
+https://techtechmedia.com/resources-resource-difference/
+    resource とresourcesが異なるとidの生成に不具合の可能性
+    pathも単数、複数を間違えるとidがうまく生成できないことがある。
