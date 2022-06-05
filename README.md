@@ -35,3 +35,5 @@ https://techtechmedia.com/resources-resource-difference/
     favoriteはresource
     commentはresources
     
+    
+    userの定義がうまくいっているのにエラーが解決できないときは一度サーバーを立ち上げなおしてuserの受け渡しをしてやる。
