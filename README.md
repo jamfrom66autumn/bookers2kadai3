@@ -37,3 +37,6 @@ https://techtechmedia.com/resources-resource-difference/
     
     
     userの定義がうまくいっているのにエラーが解決できないときは一度サーバーを立ち上げなおしてuserの受け渡しをしてやる。
+
+    
+    応用課題一のeditができないはフォームを確認、テクストエリアやフィールドひとつづつでオッケー
