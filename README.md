@@ -41,3 +41,6 @@ https://techtechmedia.com/resources-resource-difference/
     
     応用課題一のeditができないはフォームを確認、テクストエリアやフィールドひとつづつでオッケー
     応用課題１　editがうまくいかないのはeditのformタグと部分テンプレートの中のインスタンス変数のせい
+    
+    https://qiita.com/mdgwshk2021/items/5517afe1195d713b6f70
+    コロンを使う理由やコロンとはは上のリンク
