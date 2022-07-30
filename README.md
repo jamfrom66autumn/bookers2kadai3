@@ -44,3 +44,7 @@ https://techtechmedia.com/resources-resource-difference/
     
     https://qiita.com/mdgwshk2021/items/5517afe1195d713b6f70
     コロンを使う理由やコロンとはは上のリンク
+    
+    bootstrapでボタンが機能しない
+    バージョンの違いかもver5.0か4.5か大きな違いあり！！
+    
