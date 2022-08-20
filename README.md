@@ -48,3 +48,9 @@ https://techtechmedia.com/resources-resource-difference/
     bootstrapでボタンが機能しない
     バージョンの違いかもver5.0か4.5か大きな違いあり！！
     
+    
+    <li>
+  <%= link_to user_path(current_user),class: 'nav-link text-light' do %>
+    <i class="fas fa-home"></i>Home
+  <% end %>
+</li>
