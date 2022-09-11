@@ -48,9 +48,17 @@ https://techtechmedia.com/resources-resource-difference/
     bootstrapでボタンが機能しない
     バージョンの違いかもver5.0か4.5か大きな違いあり！！
     
-    
-    <li>
+<li>
   <%= link_to user_path(current_user),class: 'nav-link text-light' do %>
     <i class="fas fa-home"></i>Home
   <% end %>
 </li>
+    
+    
+    
+    
+    spring stopをかけても治らないときはgemから取り除く。
+   モデルの作成時にid入れるとエラーの原因になる可能性大
+    
+   current_userが定義できていないは単純に登録できていないから最初からやり直す。
+   
